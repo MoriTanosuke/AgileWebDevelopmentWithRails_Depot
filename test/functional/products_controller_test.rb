@@ -4,7 +4,7 @@ class ProductsControllerTest < ActionController::TestCase
   setup do
     @product = products(:one)
     @update = {
-      :title => 'Product 1',
+      :title => 'Product Title 1',
       :description => 'This is the <em>good</em> description.',
       :image_url => '/ruby.jpg',
       :price => 123.45

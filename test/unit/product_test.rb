@@ -4,7 +4,7 @@ class ProductTest < ActiveSupport::TestCase
   fixtures :products
 
   def new_product(image_url)
-    Product.new(:title => 'Product', :description => %{A description}, :image_url => image_url, :price => 0.01)
+    Product.new(:title => 'Product Title', :description => %{A description}, :image_url => image_url, :price => 0.01)
   end
 
   test "product attributes must not be empty" do
@@ -44,5 +44,9 @@ class ProductTest < ActiveSupport::TestCase
     bad.each do |name|
       assert new_product(name).invalid?, "#{name} shouldn't be valid"
     end
+  end
+
+  test "title is at least 10 chars" do
+    assert new_product('ruby.png').valid?
   end
 end
