@@ -11,3 +11,11 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+
+ruby:
+  title: Programming Ruby
+  description:
+    This is a larger description of this book. It is not 
+    true and everything here is faked.
+  price: 1.23
+  image_url: ruby.png
