@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
 
 one:
-  title: Product Title test #1
+  title: Product Title 1 
   description: MyText
   image_url: ruby.jpg
   price: 9.99
 
 two:
-  title: Product Title test #2
+  title: Product Title 2
   description: MyText
   image_url: ruby.gif
   price: 9.99
