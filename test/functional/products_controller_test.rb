@@ -14,6 +14,11 @@ class ProductsControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
+    # check if all product fixtures are displayed
+    assert_select '.list_description', 3
+    assert_select '.list_actions', 3
+    # check if link is available
+    assert_select 'a', 'New Product'
     assert_not_nil assigns(:products)
   end
 
