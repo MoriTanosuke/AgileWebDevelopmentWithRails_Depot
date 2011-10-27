@@ -1,8 +1,5 @@
 class CreateCarts < ActiveRecord::Migration
   def change
-    create_table :carts do |t|
-
-      t.timestamps
-    end
+    add_column :line_items, :quantity, :integer, :default 1
   end
 end
