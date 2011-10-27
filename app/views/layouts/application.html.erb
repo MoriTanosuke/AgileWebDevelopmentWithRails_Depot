@@ -8,7 +8,7 @@
 </head>
 <body class='<%= controller.controller_name %>'>
 <div id="banner">
-  <%= image_tag "logo.png" %>
+  <%= image_tag "rails.png" %>
   <%= @page_title || "Product Store" %>
 </div>
 <div id="columns">
@@ -19,7 +19,7 @@
       <li><a href="/news">News</a></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
-    <p id="time">Page built <span><%= Time.now %></span></p>
+    <span id="time">Page built <span><%= Time.now %></span></span>
   </div>
   <div id="main">
     <%= yield %>
